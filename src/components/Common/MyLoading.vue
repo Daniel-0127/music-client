@@ -9,7 +9,7 @@
           <div class="configure-core"></div>
         </div>
       </div>
-      <h2 style="color: white;text-align: center;margin-top: -60px">努力加载中ing</h2>
+      <h2 style="color: white;text-align: center;margin-top: -40px">努力加载中ing</h2>
     </div>
   </div>
 
