@@ -8,15 +8,15 @@
       <p>出生地址: {{ address }}</p>
     </div>
     <div id="right">
-      <div style="padding: 30px">
+      <div style="padding: 50px">
         <h3>{{ singer }}</h3>
         <p>{{ introduce }}</p>
       </div>
       <div style="">
-        <TitleList :my-data="this.data_" style="height: 400px;"></TitleList>
+        <TitleList :my-data="this.data_"></TitleList>
       </div>
 
-      <div style="margin-top: 20px"></div>
+      <div></div>
       <el-pagination background layout="prev, pager, next" v-model:page-count="total" v-model:current-page="page"
                      @update:current-page="getSongs()" />
     </div>
@@ -27,7 +27,7 @@
 
 
 import TitleList from "@/components/Common/TitleList.vue";
-import global from "@/tools/global"
+import global from "@/components/tools/global"
 export default {
   name: "DetailSinger",
   components: {TitleList},

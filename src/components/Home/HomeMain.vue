@@ -4,8 +4,7 @@
     <HomeTop></HomeTop>
 
 
-    <div style="width: 83%;height:590px;margin: 73px auto;padding: 0 80px;overflow-y: auto">
-
+    <div style="width: 86%;margin: 73px auto;">
       <router-view></router-view>
     </div>
 
@@ -34,7 +33,6 @@
 
 import AudioPlayer from "@/components/Common/AudioPlayer.vue";
 import HomeTop from "@/components/Home/HomeTop.vue";
-
 
 export default {
   name: "HomeMain",

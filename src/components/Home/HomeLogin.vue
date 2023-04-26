@@ -10,7 +10,7 @@
               <el-input class="el-input" v-model="ruleForm.username" placeholder="请输入账号" clearable
                         prefix-icon="User"></el-input>
             </el-form-item>
-            <el-form-item prop="newPwd" >
+            <el-form-item prop="newPwd" :rules="rules.newPwd">
               <el-input  @keyup.enter="Loading" class="el-input" v-model="ruleForm.newPwd" placeholder="请输入密码" show-password
                         prefix-icon="Grid"></el-input>
             </el-form-item>
@@ -55,6 +55,10 @@ export default {
         username: [
           {required: true, message: '请输入账号', trigger: 'blur'},
           {min: 2, message: '长度在 2 到 16 个字符', trigger: 'blur'}
+        ],
+        newPwd: [
+          {required: true, message: '请输入密码', trigger: 'blur'},
+          {min: 6, max: 16, message: '长度在 6 到 16 个字符', trigger: 'blur'},
         ],
       }
     }
